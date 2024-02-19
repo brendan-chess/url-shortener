@@ -1,7 +1,7 @@
 "use client";
 
 import { useFormState, useFormStatus } from "react-dom";
-import shortenURL from "../utils/shortenURL";
+import shortenUrl from "../utils/shortenUrl";
 
 function Button() {
   const { pending } = useFormStatus();
@@ -19,7 +19,7 @@ function Button() {
 
 export default function InputForm() {
   const [returnValue, action] = useFormState(
-    shortenURL,
+    shortenUrl,
     "https://localhost:3000/"
   );
 

@@ -1,6 +1,6 @@
 "use server";
 
-export default async function shortenURL(
+export default async function shortenUrl(
   currentState: string,
   formData: FormData
 ): Promise<string> {
