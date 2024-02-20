@@ -13,7 +13,7 @@ export default async function shortenUrl(
 
   const short: string = await res.json();
 
-  const shortenedURL = `https://localhost:3000/${short}`;
+  const shortenedURL = `http://localhost:3000/${short}`;
 
   return shortenedURL;
 }
